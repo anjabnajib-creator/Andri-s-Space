@@ -1,0 +1,342 @@
+/* ==========================
+   FONT & RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#0f172a;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* ==========================
+   BACKGROUND
+========================== */
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(15,23,42,.80),
+        rgba(15,23,42,.95)
+    ),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1500&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    z-index:-1;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:100%;
+    max-width:700px;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    width:100%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:28px;
+
+    padding:40px;
+
+    text-align:center;
+
+    animation:fade .5s ease;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.35);
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.coffee{
+
+    font-size:60px;
+    margin-bottom:15px;
+
+}
+
+h1{
+
+    font-size:40px;
+    font-weight:700;
+
+}
+
+.subtitle{
+
+    margin-top:8px;
+
+    color:#d6b48a;
+
+    font-size:15px;
+
+}
+
+.desc{
+
+    margin-top:30px;
+
+    line-height:1.8;
+
+    color:#d7d7d7;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button{
+
+    margin-top:35px;
+
+    border:none;
+
+    background:#c79b6b;
+
+    color:white;
+
+    font-size:16px;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    background:#d7aa78;
+
+}
+
+.secondary{
+
+    background:transparent;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+/* ==========================
+   PROGRESS
+========================== */
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+#progress-bar{
+
+    width:0%;
+
+    height:100%;
+
+    background:#c79b6b;
+
+    transition:.4s;
+
+}
+
+/* ==========================
+   COUNTER
+========================== */
+
+#counter{
+
+    color:#d6b48a;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+   EMOJI
+========================== */
+
+#emoji{
+
+    font-size:60px;
+
+    margin:20px 0;
+
+}
+
+/* ==========================
+   QUESTION
+========================== */
+
+#question{
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================
+   ANSWER
+========================== */
+
+textarea{
+
+    width:100%;
+
+    resize:none;
+
+    min-height:140px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+}
+
+textarea::placeholder{
+
+    color:#bfbfbf;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:600px){
+
+.card{
+
+padding:25px;
+
+}
+
+h1{
+
+font-size:30px;
+
+}
+
+#question{
+
+font-size:22px;
+
+}
+
+button{
+
+width:100%;
+
+margin-top:15px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+}
