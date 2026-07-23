@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1f2937,#111827);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+    text-align:center;
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+h2{
+    margin:20px 0;
+}
+
+.subtitle{
+    color:#d6b48a;
+    margin-bottom:20px;
+}
+
+button{
+    margin-top:25px;
+    border:none;
+    background:#c58c4c;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    border:none;
+    font-size:16px;
+}
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#444;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#d6b48a;
+    transition:.3s;
+}
