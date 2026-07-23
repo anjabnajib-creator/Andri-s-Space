@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andri's Space ☕</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <!-- Landing -->
+
+    <section id="welcome" class="card">
+
+        <div class="coffee">☕</div>
+
+        <h1>Andri's Space</h1>
+
+        <p class="subtitle">
+            Made with a little courage by Jabun.
+        </p>
+
+        <p class="desc">
+            Halo Andri 👋
+            <br><br>
+            Ini bukan Google Form.
+            <br>
+            Ini cuma sesuatu yang dibuat khusus buat kamu.
+            <br><br>
+            Santai aja.
+            Gak ada jawaban yang benar atau salah.
+            <br><br>
+            Cuma pengen kenal kamu sedikit lebih dekat.
+        </p>
+
+        <button onclick="startQuiz()">
+            Let's Begin →
+        </button>
+
+    </section>
+
+
+
+    <!-- Quiz -->
+
+    <section id="quiz" class="card" style="display:none;">
+
+        <div class="progress">
+
+            <div id="progress-bar"></div>
+
+        </div>
+
+        <div id="counter">
+            1 / 33
+        </div>
+
+        <div id="emoji">
+            ❤️
+        </div>
+
+        <h2 id="question">
+            Pertanyaan
+        </h2>
+
+        <textarea
+            id="answer"
+            rows="5"
+            placeholder="Tulis jawaban di sini..."
+        ></textarea>
+
+        <div class="buttons">
+
+            <button
+                class="secondary"
+                onclick="prevQuestion()">
+                ← Previous
+            </button>
+
+            <button
+                onclick="nextQuestion()">
+                Next →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Finish -->
+
+    <section id="finish" class="card" style="display:none;">
+
+        <div class="coffee">
+            🤍
+        </div>
+
+        <h1>
+            Thank You
+        </h1>
+
+        <p>
+
+            Makasih udah meluangkan waktu
+            buat ngisi semuanya.
+
+            <br><br>
+
+            Semoga setelah ini
+            Jabun bisa kenal
+            Andri sedikit lebih dekat.
+
+        </p>
+
+        <button onclick="sendWhatsapp()">
+            Kirim ke Jabun ❤️
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
